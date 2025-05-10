@@ -234,7 +234,6 @@ button {
 [type="submit"],
 button {
   -webkit-appearance: button;
-  appearance: button; /* ✅ propriété standard ajoutée */
 }
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
@@ -264,7 +263,6 @@ textarea {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
-  appearance: textfield; /* ✅ version standard */
 }
 ::-webkit-search-decoration {
   -webkit-appearance: none;
