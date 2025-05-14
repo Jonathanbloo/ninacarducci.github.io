@@ -2,9 +2,20 @@ body {
   max-width: 1920px;
   margin: auto;
   font-family: "Inter", sans-serif;
-  font-display: swap; /* Permet de minimiser les décalages de mise en page liés aux polices */
   width: 100%;
   height: 100%;
+}
+body,
+.nav {
+  font-family: "Inter", sans-serif;
+  font-display: swap;
+}
+h1,
+h2,
+h3,
+p {
+  font-family: "Spectral", serif;
+  font-display: swap;
 }
 
 * {
@@ -45,6 +56,7 @@ body {
 
 .social-link img {
   width: 20px;
+  height: 20px;
 }
 
 #about {
@@ -97,7 +109,8 @@ body {
   text-align: center;
   padding-block: 2em;
 }
-.d-block {
+img.d-block.w-100 {
+  aspect-ratio: 16 / 9; /* Permet de conserver un ratio constant */
   width: 100%;
   height: auto;
 }
@@ -106,9 +119,8 @@ body {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #beb45a;
-  border-radius: 0;
+  background-color: #7a7531 !important;
+  color: #fff !important;
 }
 .nav-pills .nav-link {
   color: #000;

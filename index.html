@@ -1,40 +1,90 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./assets/bootstrap/bootstrap.min.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <link
-      rel="stylesheet"
-      href="./assets/style.min.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-      <link rel="stylesheet" href="./assets/style.min.css" />
-    </noscript>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <!-- Métadonnées essentielles -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Portfolio de Nina Carducci – Photographe</title>
+
+  <!-- Préconnexion aux domaines de Google Fonts pour accélérer la requête de polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Préchargement des polices critiques (Inter & Spectral) -->
+  <link
+    rel="preload"
+    href="https://fonts.gstatic.com/s/inter/v3/pxiEyp8kv8JHgFVrLPTb0w.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="https://fonts.gstatic.com/s/spectral/v7/pxiFyp8kv8JHgFVrLPTb0w.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+
+  <!-- Préchargement de l'image principale du slider -->
+  <link
+    rel="preload"
+    href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+    as="image"
+    type="image/webp"
+    imagesrcset="
+      ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-400w.webp 400w,
+      ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp 800w,
+      ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1600w.webp 1600w
+    "
+    fetchpriority="high"
+  />
+
+  <!-- CSS de Bootstrap et styles personnalisés -->
+  <link
+    rel="stylesheet"
+    href="./assets/bootstrap/bootstrap.min.css"
+    media="print"
+    onload="this.media='all'"
+  />
+  <link
+    rel="stylesheet"
+    href="./assets/style.min.css"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <!-- Fallback si JavaScript est désactivé -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
+  </noscript>
+
+  <!-- Google Fonts (chargement différé pour éviter le blocage du rendu) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
     />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
-    <meta charset="UTF-8" />
-  </head>
+  </noscript>
+
+  <!-- Scripts JavaScript différés (Bootstrap, jQuery, MauGallery, custom) -->
+  <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <script src="./assets/maugallery.js" defer></script>
+  <script src="./assets/scripts.js" defer></script>
+</head>
+
   <body>
     <div class="top-header">
       <h3 class="name">Nina Carducci</h3>
@@ -94,12 +144,8 @@
                 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp   800w,
                 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1600w.webp 1600w
               "
-              sizes="
-              (max-width: 576px) 400px,
-              (max-width: 768px) 800px,
-              1600px
-              "
-              width="1600"
+              width="1425"
+              height="800"
               loading="eager"
               fetchpriority="high"
             />
@@ -114,12 +160,8 @@
                 ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-800w.webp   800w,
                 ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1600w.webp 1600w
               "
-              sizes="
-              (max-width: 576px) 400px,
-              (max-width: 768px) 800px,
-              1600px
-              "
-              width="1600"
+              width="1425"
+              height="800"
               loading="lazy"
             />
           </div>
@@ -133,11 +175,8 @@
                 ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-800w.webp   800w,
                 ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1600w.webp 1600w
               "
-              sizes="
-              (max-width: 576px) 400px,
-              (max-width: 768px) 800px,
-              1600px
-              "
+              width="1425"
+              height="800"
               loading="lazy"
             />
           </div>
@@ -200,53 +239,80 @@
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
             alt="Chanteur sur scène"
+            width="424"
+            height="424"
             loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+            alt="Portrait professionnel d’un homme en costume"
+            width="424"
+            height="424"
             loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+            alt="Réunion de travail autour d’un ordinateur"
+            width="424"
+            height="424"
+            loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
+            alt="Couple de mariés se tenant la main"
+            width="424"
+            height="424"
             loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
+            alt="Portrait en lumière naturelle d’un homme"
+            width="424"
+            height="424"
             loading="lazy"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+            alt="Photo de mariage en plein air avec invités"
+            width="424"
+            height="424"
             loading="lazy"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
+            alt="Portrait d’un homme au regard intense"
+            width="424"
+            height="424"
             loading="lazy"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
+            alt="Chanteur devant une foule en liesse"
+            width="424"
+            height="424"
             loading="lazy"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+            alt="Vue de bureaux modernes dans une entreprise"
+            width="424"
+            height="424"
             loading="lazy"
           />
       </div>
