@@ -83,96 +83,76 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
+      "@type": "ProfessionalService",
+      "@id": "https://ninacarducci.github.io/#photography-service",
+      "name": "Nina Carducci Photography",
+      "url": "https://ninacarducci.github.io/",
+      
+      /* — NOUVEAUTÉS — */
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ninacarducci.github.io/assets/images/nina.webp",
+        "width": 400,
+        "height": 399
+      },
+      "priceRange": "50–400 €",
+      /* — FIN des nouveautés — */
+    
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue Alsace-Lorraine",
+        "postalCode": "33200",
+        "addressLocality": "Bordeaux",
+        "addressCountry": "FR"
+      },
+      "telephone": "05 56 67 78 89",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday","Tuesday","Wednesday","Thursday","Friday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      "makesOffer": [
         {
-          "@type": "WebSite",
-          "@id": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html#website",
-          "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html",
-          "name": "Nina Carducci Photography",
-          "description": "Portfolio de Nina Carducci, photographe passionnée.",
-          "inLanguage": "fr-FR"
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Shooting photo (½ journée)",
+            "description": "Pour capturer vos moments…"
+          },
+          "priceCurrency": "EUR",
+          "price": 350,
+          "areaServed": "Île-de-France"
         },
         {
-          "@type": "Person",
-          "@id": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html#person",
-          "name": "Nina Carducci",
-          "jobTitle": "Photographe",
-          "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html",
-          "image": {
-            "@type": "ImageObject",
-            "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/assets/images/nina.webp",
-            "width": 400,
-            "height": 399
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Retouches photos",
+            "description": "Vous souhaitez retoucher…"
           },
-          "sameAs": [
-            "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-          ]
+          "priceCurrency": "EUR",
+          "price": 50,
+          "unitCode": "C62",
+          "areaServed": "Île-de-France"
         },
         {
-          "@type": "ProfessionalService",
-          "@id": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html#photography-service",
-          "name": "Nina Carducci Photography",
-          "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "68 avenue Alsace-Lorraine",
-            "postalCode": "33200",
-            "addressLocality": "Bordeaux",
-            "addressCountry": "FR"
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Album photos personnalisé",
+            "description": "Album A4 de 30 pages…"
           },
-          "telephone": "05 56 67 78 89",
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "10:00",
-            "closes": "19:00"
-          },
-          "makesOffer": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Shooting photo (½ journée)",
-                "description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos."
-              },
-              "priceCurrency": "EUR",
-              "price": 350,
-              "areaServed": "Île-de-France"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Retouches photos",
-                "description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications. Inclut 2 allers-retours par photo."
-              },
-              "priceCurrency": "EUR",
-              "price": 50,
-              "unitCode": "C62",
-              "areaServed": "Île-de-France"
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Album photos personnalisé",
-                "description": "Album A4 de 30 pages recto-verso pour partager vos souvenirs avec vos proches et clients."
-              },
-              "priceCurrency": "EUR",
-              "price": 400,
-              "areaServed": "Île-de-France"
-            }
-          ]
+          "priceCurrency": "EUR",
+          "price": 400,
+          "areaServed": "Île-de-France"
         }
       ]
     }
     </script>
+    
     
 
 </head>
