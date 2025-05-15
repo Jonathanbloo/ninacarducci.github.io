@@ -4,8 +4,15 @@
   <!-- Métadonnées essentielles -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Portfolio de Nina Carducci – Photographe</title>
+  <meta name="description" content="Découvrez le portfolio d'une photographe professionnelle Nina Carducci proposant de la retouche photo, des shootings et des albums photos" />
+  <meta property="og:title" content="Portfolio de Nina Carducci – Photographe" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html" />
+  <meta property="og:description" content="Découvrez le portfolio d'une photographe professionnelle Nina Carducci proposant de la retouche photo, des shootings et des albums photos" />
+  <meta property="og:image" content="https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/assets/images/nina.webp" />
+  <meta property="og:site_name" content="Portfolio de Nina Carducci" />
+
 
   <!-- Préconnexion aux domaines de Google Fonts pour accélérer la requête de polices -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,14 +20,12 @@
 
   <!-- Préchargement des polices critiques (Inter & Spectral) -->
   <link
-    rel="preload"
     href="https://fonts.gstatic.com/s/inter/v3/pxiEyp8kv8JHgFVrLPTb0w.woff2"
     as="font"
     type="font/woff2"
     crossorigin="anonymous"
   />
   <link
-    rel="preload"
     href="https://fonts.gstatic.com/s/spectral/v7/pxiFyp8kv8JHgFVrLPTb0w.woff2"
     as="font"
     type="font/woff2"
@@ -38,24 +43,26 @@
       ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp 800w,
       ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1600w.webp 1600w
     "
+    width="1600"
+    height="740"
     fetchpriority="high"
   />
 
   <!-- CSS de Bootstrap et styles personnalisés -->
   <link
-    rel="stylesheet"
+    rel="preload"
     href="./assets/bootstrap/bootstrap.min.css"
-    media="print"
-    onload="this.media='all'"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
   />
   <link
-    rel="stylesheet"
+    rel="preload"
     href="./assets/style.min.css"
-    media="print"
-    onload="this.media='all'"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
   />
+  <!-- fallback si JavaScript désactivé -->
   <noscript>
-    <!-- Fallback si JavaScript est désactivé -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.min.css" />
   </noscript>
@@ -73,21 +80,105 @@
       rel="stylesheet"
     />
   </noscript>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html#website",
+          "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html",
+          "name": "Nina Carducci Photography",
+          "description": "Portfolio de Nina Carducci, photographe passionnée.",
+          "inLanguage": "fr-FR"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html#person",
+          "name": "Nina Carducci",
+          "jobTitle": "Photographe",
+          "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/assets/images/nina.webp",
+            "width": 400,
+            "height": 399
+          },
+          "sameAs": [
+            "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html#photography-service",
+          "name": "Nina Carducci Photography",
+          "url": "https://github.com/Jonathanbloo/ninacarducci.github.io-main/blob/main/index.html",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 avenue Alsace-Lorraine",
+            "postalCode": "33200",
+            "addressLocality": "Bordeaux",
+            "addressCountry": "FR"
+          },
+          "telephone": "05 56 67 78 89",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          },
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Shooting photo (½ journée)",
+                "description": "Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos."
+              },
+              "priceCurrency": "EUR",
+              "price": 350,
+              "areaServed": "Île-de-France"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Retouches photos",
+                "description": "Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications. Inclut 2 allers-retours par photo."
+              },
+              "priceCurrency": "EUR",
+              "price": 50,
+              "unitCode": "C62",
+              "areaServed": "Île-de-France"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Album photos personnalisé",
+                "description": "Album A4 de 30 pages recto-verso pour partager vos souvenirs avec vos proches et clients."
+              },
+              "priceCurrency": "EUR",
+              "price": 400,
+              "areaServed": "Île-de-France"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    
 
-  <!-- Scripts JavaScript différés (Bootstrap, jQuery, MauGallery, custom) -->
-  <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-    defer
-  ></script>
-  <script src="./assets/maugallery.js" defer></script>
-  <script src="./assets/scripts.js" defer></script>
 </head>
 
   <body>
-    <div class="top-header">
+    <header class="top-header">
       <h1 class="name">Nina Carducci</h1>
       <div class="nav">
         <ul>
@@ -105,7 +196,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </header>
     <section id="header">
       <div
         id="carouselExampleIndicators"
@@ -137,47 +228,51 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
-              class="d-block w-100"
+              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1600w.webp"
+              
               alt="Un homme qui traverse un pessage pièton à Tokyo"
               srcset="
                 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-400w.webp   400w,
                 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-800w.webp   800w,
                 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1600w.webp 1600w
               "
-              width="1425"
-              height="800"
-              loading="eager"
-              fetchpriority="high"
+              class="d-block img-fluid"
+              sizes="(max-width: 800px) 100vw, (max-width: 1600px) 100vw, 1600px"
+              width="1600"
+              height="740"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
-              class="d-block w-100"
+              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1600w.webp"
+              
               alt="Public enthousiaste lors d’un concert, poings levés"
               srcset="
                 ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-400w.webp   400w,
                 ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-800w.webp   800w,
                 ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-1600w.webp 1600w
               "
-              width="1425"
-              height="800"
+              class="d-block img-fluid"
+              sizes="(max-width: 800px) 100vw, (max-width: 1600px) 100vw, 1600px"
+              width="1600"
+              height="740"
               loading="lazy"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-              class="d-block w-100"
+              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1600w.webp"
+              
               alt="Jeunes mariés s’embrassant lors de leur cérémonie"
               srcset="
                 ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-400w.webp   400w,
                 ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-800w.webp   800w,
                 ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-1600w.webp 1600w
               "
-              width="1425"
-              height="800"
+              class="d-block img-fluid"
+              sizes="(max-width: 800px) 100vw, (max-width: 1600px) 100vw, 1600px"
+              width="1600"
+              height="740"
               loading="lazy"
             />
           </div>
@@ -205,14 +300,15 @@
     <section id="about">
       <div class="picture left">
         <img
-          src="/assets/images/nina.webp"
-          alt="Portrait de Nina"
-          width="395"
-          height="394"
+          src="assets/images/nina.webp"
+          width="400"
+          height="399"
+          class="img-fluid"
+          alt="Nina"
           loading="lazy"
-        />
+        >
       </div>
-      <section id="about-me">
+      <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
         <h3 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
@@ -229,7 +325,7 @@
           puissiez y puiser de l’amour, du bonheur, de la tendresse et de
           lumière à chaque fois que vous poserez les yeux sur vos photos.
         </p>
-      </section>
+      </div>
     </section>
     <section id="gallery">
       <h2 class="title">Portfolio</h2>
@@ -417,16 +513,22 @@
           <img
             src="./assets/images/camera.webp"
             alt="Photo d'un appareil photo"
-            width="20"
-            height="20"
+            width="400"
+            height="399"
             loading="lazy"
           />
         </div>
       </div>
     </section>
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./assets/maugallery.min.js" defer></script>
-<script src="./assets/scripts.min.js" defer></script>
+      <!-- Scripts JavaScript différés (Bootstrap, jQuery, custom) -->
+  <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <script src="./assets/maugallery.min.js" defer></script>
+  <script src="./assets/scripts.min.js" defer></script>
   </body>
 </html>

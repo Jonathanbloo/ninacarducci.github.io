@@ -12,8 +12,7 @@ body,
 }
 h1,
 h2,
-h3,
-p {
+h3 {
   font-family: "Spectral", serif;
   font-display: swap;
 }
@@ -67,6 +66,12 @@ p {
   position: relative;
 }
 
+.picture.left img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400 / 399;
+  object-fit: contain;
+}
 .picture.left::before {
   content: " ";
   background-color: #e5975f;
@@ -100,6 +105,7 @@ p {
   font-weight: 800;
   font-style: italic;
   width: 60%;
+  font-size: 1rem;
 }
 #about-me p {
   width: 80%;
@@ -109,11 +115,7 @@ p {
   text-align: center;
   padding-block: 2em;
 }
-img.d-block.w-100 {
-  aspect-ratio: 16 / 9; /* Permet de conserver un ratio constant */
-  width: 100%;
-  height: auto;
-}
+
 .gallery .nav {
   justify-content: center;
 }
@@ -173,6 +175,9 @@ img.d-block.w-100 {
   font-family: Spectral;
   font-style: italic;
   font-weight: 300;
+}
+.quote p {
+  font-size: 2.5rem;
 }
 .quote__author {
   font-family: Spectral;
